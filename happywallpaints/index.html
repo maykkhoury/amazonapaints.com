@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Happywall Paints</title>
+      <link rel="icon" type="image/png" href="../img/icons/happywall-browser-icon.png" sizes="16x16">
+      <link rel="icon" type="image/png" href="../img/icons/happywall-browser-icon.png" sizes="32x32">
+      <!-- Font Awesome Icons -->
+      <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+      <!-- Jquery-ui CSS -->
+      <link rel="stylesheet" href="../vendor/jquery-ui/jquery-ui.css">
+      <!-- Plugin CSS -->
+      <link href="../vendor/magnific-popup/magnific-popup-mk.css" rel="stylesheet">
+      <!-- Theme CSS - Includes Bootstrap -->
+      <link href="../css/creative.css?v=6" rel="stylesheet">
+   </head>
+   <body id="page-top" class="happywall">
+      <!-- Bootstrap core JavaScript -->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="../vendor/jquery-ui/jquery-ui.min.js"></script>
+      <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger mk-logo-container" href="#page-top">
+            <img class="mk-logo-img" src="../img/icons/happywall-icon-noslogan.png"/>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#products">Products</a>
+                  </li>
+                  <!--<li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                     </li>
+                     -->
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Masthead -->
+      <header class="masthead">
+         <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+               <div class="col-lg-10 align-self-end">
+                  <h1 class="text-uppercase text-white font-weight-bold">Coloring the impossible</h1>
+                  <hr class="divider my-4">
+               </div>
+               <div class="col-lg-8 align-self-baseline">
+                  <p class="text-white font-weight-bold mb-5">Decorative & protective coatings for walls & floorings</p>
+                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="#products">Check out our products below</a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Products Section -->
+      <script>
+         function searchProducts(form){
+         var productSearch=$(form).find("[name='productSearch']").val();
+         if(productSearch !== ''){
+         searchProduct(productSearch,"products");
+         $('#search-div').css('padding-top','130px');
+         window.location="#search-div";
+         }
+         return false;
+         }
+         
+         function cancelSearchIfNeedTo(inputReset) {
+         var inputValue=$(inputReset).prev().val();
+         
+         $('#search-div').css('padding-top','0px');
+         window.location="#products";
+         cancelSearchProduct("products");
+         $(inputReset).hide();
+         
+         }
+         function downloadDatasheet(theButton){
+         var productName = $(theButton).closest('.mk-search').attr('data-product-name');
+         alert('Attempt to download the datasheet for "' + productName + '"');
+         }
+      </script>
+      <section class="page-section" id="products">
+         <div class="container-fluid">
+            <h2 class="text-center text-primary mt-0">Products</h2>
+            <div class="row">
+               <div class="col-12 text-center">
+                  <img src="../img/happywall-products.jpg" class="rounded-circle" style="max-width: 350px;">
+               </div>
+            </div>
+            <!--search button -->
+            <section class="search-div" id="search-div">
+               <div class="container pl-0 pr-0">
+                  <br/>
+                  <div class="row justify-content-center">
+                     <div class="col-12 col-md-10 col-lg-8 pl-0 pr-0">
+                        <form class="card card-sm mk-display-flex-pc mk-pc-form" onsubmit="return searchProducts(this)">
+							<div class="card-body row no-gutters align-items-center">
+								<div class="col-1">
+									<i class="fas fa-2x fa-search text-primary"></i>
+								</div>
+								  <!--end of col-->
+								  
+								<div class="col-8">
+									<input name="productSearch" class="form-control form-control-borderless mk-search-input" type="text" placeholder="Search for Products and Datasheets">
+								</div>
+								<div class="col-1">
+									<input class="mk-search-reset" type="reset" value="" alt="clear" onclick="cancelSearchIfNeedTo(this)"/>
+								</div>
+								  <!--end of col-->
+								<div class="col-2">
+									<button class="btn btn-lg btn-success" type="submit">Search</button>
+								</div>
+								  <!--end of col-->
+                           </div>
+                        </form>
+                        <form class="card card-sm mk-display-flex-mobile mk-mobile-form" onsubmit="return searchProducts(this)">
+                           <div class="card-body row no-gutters align-items-center">
+								
+								 <!--end of col-->
+								  
+								<div class="col-9">
+									<input name="productSearch" class="form-control form-control-borderless mk-search-input" type="text" placeholder="Products and Datasheets">
+								</div>
+								<div class="col-1">
+									<input class="mk-search-reset" type="reset" value="" alt="clear" onclick="cancelSearchIfNeedTo(this)" style="display: none;">
+								</div>
+								  <!--end of col-->
+								<div class="col-2 pl-3">
+									<button class="btn btn-lg btn-success" type="submit"><i class="fas fa-1x fa-search"></i></button>
+								</div>
+								  <!--end of col-->
+                           </div>
+                        </form>
+                     </div>
+                     <!--end of col-->
+                  </div>
+               </div>
+               <script>
+                  $("#search-div input.mk-search-input").on('input', function() {
+                    var theValue = $(this).val();
+                    if(theValue !== ''){
+                  	$(this).closest(".row").find(".mk-search-reset").show();
+                    }else{
+                  	$(this).closest(".row").find(".mk-search-reset").hide();
+                  	//trigger cancelchange
+                  	cancelSearchProduct("products");
+                    }
+                  });
+                  
+                   
+               </script>
+               <!--end search button -->
+               <!-- TDS Modal -->
+               <div class="modal fade" id="datasheetsModal" tabindex="-1" role="dialog" aria-labelledby="Datasheets" style="display: none;" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="mk-modalLabel"></h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">×</span>
+                           </button>
+                        </div>
+                        <div class="modal-body">
+                           <div class="list-group">
+                              <a id="mk-copyfrom" style="display:none" target="_blank" href="#" class="list-group-item list-group-item-action">
+								<i class="fa fa-download"></i> 
+								First item
+                              </a>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <script>
+                  $('#datasheetsModal').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget); // Button that triggered the modal
+                    var productName = $(button).closest("div.mk-search").attr("data-product-name");
+                    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                    var modal = $(this);
+					var categoryElement = $(button).closest("div.mk-carousel-container").prev();
+					var categoryFolder = $(categoryElement).attr("data-product-category");
+					var categoryLabel = $(categoryElement).text();
+                    modal.find('.modal-title').text('Datasheets for "' + categoryLabel + '/' + productName + '"');
+                    modal.find('.modal-body input').val(productName);
+					
+					//delete all siblings of <a>
+					modal.find('#mk-copyfrom').siblings().remove();
+					/***************/
+					
+					
+					//debugger;
+					/**get files names**/
+					
+					var filesUrl = "tds/" + categoryFolder + "/"+productName+ "/files.json";
+					/*jQuery.get(url, function(data) {
+					   alert(data);
+
+					});*/
+					
+					$.ajax({
+						type: "GET",
+						url: filesUrl,
+						dataType: "json"
+					}).done(function (res) {
+						// Your `success` code
+						//debugger;
+						$.each(res.files, function( index, value ) {
+						  //debugger;
+						  modal.find('#mk-copyfrom').clone().attr("style","").attr("id","mk-123").html("<i class='fa fa-download'></i> " +value.name).attr("href","tds/" + categoryFolder + "/"+productName + "/"+value.name).appendTo(modal.find('#mk-copyfrom').closest(".modal-body .list-group"));
+						});
+					}).fail(function (jqXHR, textStatus, errorThrown) {
+						//alert("AJAX call failed: " + textStatus + ", " + errorThrown);
+						//modal.find('#mk-copyfrom').clone().attr("style","").attr("id","mk-123").html("Files not found").appendTo();
+						modal.find('#mk-copyfrom').parent().prepend("<div class='alert alert-danger'><strong>Error!</strong> Files not found.</div>");
+					});
+
+					/**********/
+                  });
+               </script>
+               <div class="mk-accordion-wrapper-hidden">
+               </div>
+               <div class="mk-accordion-wrapper">
+                  <div id="accordion">
+                     <h3 onclick="window.location='#emulsion-paints';" data-product-category="emulsion-paints">Emulsion Paints <span class="mk-display-count"></span></h3>
+                     <div class="row no-gutters mk-carousel-container" data-search-count="0">
+                        <section id="emulsion-paints"></section>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="ready putty">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Ready Putty</h4></br>A textured compound used to fill pores and smooth uneven surfaces." href="../img/emulsion-paints/Ready-Putty-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Ready-Putty-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Ready Putty
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="joint compound">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Joint compound</h4></br>A multi-purpose compound suitable for sealing joints, leveling and repairing surfaces." href="../img/emulsion-paints/Joint-compound-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Joint-compound-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Joint compound
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="sealer">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Sealer</h4></br>Water-based primer ensuring excellent adhesion and bonding properties even on hard to paint surfaces." href="../img/emulsion-paints/fullsize/Sealer.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Sealer-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Sealer
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="undercoat">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Undercoat</h4></br>High performance waterborne coating used as a primer and intermediate coat providing paint adhesion and durability." href="../img/emulsion-paints/Undercoat-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Undercoat-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Undercoat
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="latex emulsion">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Latex Emulsion</h4></br>High quality emulsion paint specially formulated for use on interior walls and ceilings." href="../img/emulsion-paints/Latex-Emulsion-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Latex-Emulsion-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Latex Emulsion
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="vinyl emulsion">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Vinyl Emulsion</h4></br>High performance interior decorative and protective finish with excellent resistance." href="../img/emulsion-paints/Vinyl-emulsion-2-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Vinyl-emulsion-2-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Vinyl Emulsion
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="super vinyl emulsion">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Super Vinyl Emulsion</h4></br>Interior and exterior finish ensuring excellent durability and long-lasting performance." href="../img/emulsion-paints/Super-vinyl-emulsion1-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Super-vinyl-emulsion1-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Super Vinyl Emulsion
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="stucco">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Stucco</h4></br>An elegant and antique finish yielding trendy effects for interior applications." href="../img/emulsion-paints/fullsize/Stucco-1.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Stucco-1-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Stucco
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="patina">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Patina</h4></br>Patina aspect for luxurious and ornamental effects on interior and exterior walls and facades." href="../img/emulsion-paints/Patine-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Patine-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Patina
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="antico">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Antico</h4></br>Elegant and distinguished finish with an exceptional appeal for decorative vintage or contemporary features." href="../img/emulsion-paints/Antico-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Antico-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Antico
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="pearlescent effects">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Pearlescent effects</h4></br>Smooth or textured decorative pattern with metallic shades achieving a beautiful visual and tactile effect." href="../img/emulsion-paints/fullsize/Pearlescent-effects.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Pearlescent-effects-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Pearlescent effects
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="water based varnish">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Water based varnish</h4></br>A tough durable transparent finish providing high protection to substrates subject to wear, sunlight and weathering conditions." href="../img/emulsion-paints/Varnish-320x200.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Varnish-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Water based varnish
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						<div class="col-lg-3 col-sm-6 mk-search" data-product-name="anti-bacterial">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Anti-bacterial</h4></br>Highly protective finish against bacteria, mould and fungi." href="../img/emulsion-paints/fullsize/Antibacterial.jpg">
+                                    <img class="img-fluid" src="../img/emulsion-paints/Antibacterial-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Emulsion Paints
+                                       </div>
+                                       <div class="project-name">
+                                          Anti-bacterial
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                     <h3 onclick="window.location='#textured-and-waterproofing-coatings';" data-product-category="textured-and-waterproofing">Textured and waterproofing coatings <span class="mk-display-count"></span></h3>
+                     <div class="row no-gutters mk-carousel-container" data-search-count="0">
+                        <section id="textured-and-waterproofing-coatings"></section>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="roller texture">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Roller texture</h4></br>Fine or coarse textured pattern offering a protective aesthetical finish for interior and exterior applications." href="../img/textured-and-waterproofing/Textured-roll-coatings-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Textured-roll-coatings-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Roller texture
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="maplexine scratched finish">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Maplexine scratched finish</h4></br>Protective scratched finish offering a decorative aspect along with insulating properties." href="../img/textured-and-waterproofing/Scratched-texture-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Scratched-texture-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Maplexine scratched finish
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="monocouche">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Monocouche</h4></br>High build textured finish with great adhesion and resistance to abrasion and environmental conditions." href="../img/textured-and-waterproofing/Monocouche-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Monocouche-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Monocouche
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="gratin">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Gratin</h4></br>A highly textured finish providing excellent resistance to cracking and water penetration." href="../img/textured-and-waterproofing/Gratin-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Gratin-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Gratin
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="coarse texture waterproof">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Coarse texture waterproof</h4></br>High performance coating with excellent water resistance." href="../img/textured-and-waterproofing/Coarse-texture-waterproof-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Coarse-texture-waterproof-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Coarse texture waterproof
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="happy bond waterproof">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Happy Bond waterproof</h4></br>Elastomeric waterproofing film exhibiting high water repellency and excellent resistance to mold and mildew. " href="../img/textured-and-waterproofing/Happy-Bond-waterproof-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Happy-Bond-waterproof-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Happy Bond waterproof
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="water repellent">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Water repellent</h4></br>Silicone based paint specially designed for concrete to limit water penetration preventing substrate damage." href="../img/textured-and-waterproofing/Water-Repellent-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Water-Repellent-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Water repellent
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="exterior masonry paint">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Exterior Masonry Paint</h4></br>Pliolite based self-priming paint offering excellent insulation and water resistance for concrete facades and walls." href="../img/textured-and-waterproofing/Exterior-Masonry-Paint-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Exterior-Masonry-Paint-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Exterior Masonry Paint
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="tennis court paint">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Tennis court paint</h4></br>Hard-wearing water-based system specially designed for sports fields. " href="../img/textured-and-waterproofing/Tennis-court-paint-320x200.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Tennis-court-paint-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Tennis court paint
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						
+						<div class="col-lg-3 col-sm-6 mk-search" data-product-name="anti-carbonation">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Anti-carbonation</h4></br>Ultimate protection to concrete, high durability, chemical resistance and anti-cracking properties. It allows water vapor diffusion." href="../img/textured-and-waterproofing/fullsize/Anticarbonation.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/Anticarbonation-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Anti-carbonation
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						
+						<div class="col-lg-3 col-sm-6 mk-search" data-product-name="two-component cementitious waterproofing membrane">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Two-component cementitious waterproofing membrane</h4></br>A flexible elastomeric two-component membrane specially developed to protect and waterproof concrete, masonry, brick, stone…" href="../img/textured-and-waterproofing/fullsize/2K-Cementitious-waterproofing.jpg">
+                                    <img class="img-fluid" src="../img/textured-and-waterproofing/2K-Cementitious-waterproofing-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Textured and waterproofing coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Two-component cementitious waterproofing membrane
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						
+                     </div>
+                     <h3 onclick="window.location='#solvent-based-paints-and-varnishes';" data-product-category="solvent-based-paints-and-varnishes">Solvent-based paints and varnishes <span class="mk-display-count"></span></h3>
+                     <div class="row no-gutters mk-carousel-container" data-search-count="0">
+                        <section id="solvent-based-paints-and-varnishes"></section>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="undercoat">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Undercoat</h4></br>Oil based primer for new and previously painted interior and exterior surfaces." href="../img/solvent-based-paints-and-varnishes/Oil-based-primer-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Oil-based-primer-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Undercoat
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="metal primers">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Metal primers</h4></br>Alkyd based primers protecting metal surfaces against corrosion." href="../img/solvent-based-paints-and-varnishes/Metal-primers-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Metal-primers-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Metal primers
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="alkyd enamel">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Alkyd enamel</h4></br>High quality enamel with excellent weathering and chalking resistance." href="../img/solvent-based-paints-and-varnishes/Alkyd-paints-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Alkyd-paints-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Alkyd enamel
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						<div class="col-lg-3 col-sm-6 mk-search" data-product-name="wood putty">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Wood putty</h4></br>A general purpose water-based wood putty which provides a permanent filling for cracks, holes and surface imperfections and structural repair of defects in wood. Easy to shape, sand and paint preventing further rot and maintenance to any exposed wood." 
+									href="../img/solvent-based-paints-and-varnishes/fullsize/Wood-putty.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Wood-putty-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Wood putty
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="woodstains">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Woodstains</h4></br>Multi-purpose wood stains for tinting and protecting interior and exterior wood surfaces." href="../img/solvent-based-paints-and-varnishes/Woodstains-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Woodstains-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Woodstains
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="traffic paints">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Traffic paints</h4></br>Long-lasting and fast drying roadmarking paint." href="../img/solvent-based-paints-and-varnishes/Traffic-paints-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Traffic-paints-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Traffic paints
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="chalkboard paints">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Chalkboard paints</h4></br>Washable finish for the maintenance of boards and for designing chalkboard surfaces." href="../img/solvent-based-paints-and-varnishes/chalkboard-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/chalkboard-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Chalkboard paints
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="swimming pool paint">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Swimming pool paint</h4></br>Pliolite based paint specially formulated for swimming pools, damp areas and underwater installations." href="../img/solvent-based-paints-and-varnishes/Swimming-pool-paint-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Swimming-pool-paint-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Swimming pool paint
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="heat resistant paint">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Heat resistant paint</h4></br>Ideal for surfaces subject to high temperatures and thermal shocks (withstands temperatures up to 400°C)." href="../img/solvent-based-paints-and-varnishes/Heat-resistant-paint-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Heat-resistant-paint-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Heat resistant paint
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="fluorescent and gold paints">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Fluorescent and Gold paints</h4></br>Special coating with radiant pigments providing reflective finish to enhance surface visibility." href="../img/solvent-based-paints-and-varnishes/Fluorescent-and-gold-paint-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Fluorescent-and-gold-paint-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Fluorescent and Gold paints
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="varnish">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Varnish</h4></br>Transparent or tinted finish providing high protection to substrates subject to wear, sunlight and weathering conditions." href="../img/solvent-based-paints-and-varnishes/Varnish-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Varnish-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Varnish
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="marine varnish">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Marine varnish</h4></br>Highly durable polyurethane based varnish specially designed for surfaces requiring high resistance and excellent performance in rough conditions." href="../img/solvent-based-paints-and-varnishes/Marine-varnish-320x200.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Marine-varnish-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Marine varnish
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						
+						<div class="col-lg-3 col-sm-6 mk-search" data-product-name="multipurpose paints">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Multipurpose paints</h4></br>One pack thermoplastic acrylic coating applied over concrete and masonry floors to provide weathering and abrasion resistance." href="../img/solvent-based-paints-and-varnishes/fullsize/Multipurpose.jpg">
+                                    <img class="img-fluid" src="../img/solvent-based-paints-and-varnishes/Multipurpose-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Solvent-based paints and varnishes
+                                       </div>
+                                       <div class="project-name">
+                                          Multipurpose paints
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						
+                     </div>
+                     <h3 onclick="window.location='#epoxy-coatings';" data-product-category="epoxy-coatings">Epoxy coatings <span class="mk-display-count"></span></h3>
+                     <div class="row no-gutters mk-carousel-container" data-search-count="0">
+                        <section id="epoxy-coatings"></section>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="epoxy putty">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Epoxy putty</h4></br>Multi-purpose filler for uneven surfaces, crevices, cracks and holes." href="../img/epoxy-coatings/Epoxy-putty-320x200.jpg">
+                                    <img class="img-fluid" src="../img/epoxy-coatings/Epoxy-putty-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Epoxy coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Epoxy putty
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="epoxy zinc rich primer">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Epoxy zinc rich primer</h4></br>Metal primer yielding outstanding corrosion resistance." href="../img/epoxy-coatings/Epoxy-zinc-rich-primer-320x200.jpg">
+                                    <img class="img-fluid" src="../img/epoxy-coatings/Epoxy-zinc-rich-primer-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Epoxy coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Epoxy zinc rich primer
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="epoxy coal tar">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Epoxy Coal tar</h4></br>High build coating providing corrosion and mechanical resistance in extreme conditions." href="../img/epoxy-coatings/Epoxy-Coal-tar-320x200.jpg">
+                                    <img class="img-fluid" src="../img/epoxy-coatings/Epoxy-Coal-tar-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Epoxy coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Epoxy Coal tar
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="epoxy solvent borne">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Epoxy solvent borne</h4></br>Epoxy paint system providing long term mechanical, chemical and corrosion resistance." href="../img/epoxy-coatings/Epoxy-topcoat-320x200.jpg">
+                                    <img class="img-fluid" src="../img/epoxy-coatings/Epoxy-topcoat-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Epoxy coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Epoxy solvent borne
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="epoxy solvent free">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Epoxy solvent free</h4></br>Heavy-duty self-leveling coating with excellent chemical and abrasion resistance." href="../img/epoxy-coatings/Epoxy-solvent-free-320x200.jpg">
+                                    <img class="img-fluid" src="../img/epoxy-coatings/Epoxy-solvent-free-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption p-3">
+                                       <div class="project-category text-white-50">
+                                          Epoxy coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Epoxy solvent free
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mk-search" data-product-name="epoxy waterborne">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Epoxy waterborne</h4></br>Protective coatings for areas where eco-friendly products are required such as hospitals, food industry…" href="../img/epoxy-coatings/Epoxy-waterborne-320x200.jpg">
+                                    <img class="img-fluid" src="../img/epoxy-coatings/Epoxy-waterborne-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Epoxy coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Epoxy waterborne
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+						<div class="col-lg-3 col-sm-6 mk-search" data-product-name="epoxy crystal clear">
+                           <div class="row">
+                              <div class="col-12">
+                                 <button type="button" class="btn btn-primary mk-download-datasheet" data-toggle="modal" data-target="#datasheetsModal"><i class="fa fa-list" aria-hidden="true"></i> Datasheets</button>
+                              </div>
+                              <div class="col-12">
+                                 <a class="portfolio-box" title="<h4>Epoxy Crystal Clear</h4></br>High performance coating recommended for surfaces that require a clear, glass-like finish. Developed to offer unrivalled clarity, non-yellowing properties, air release and UV resistance for 3D floorings, bar tops and table tops." href="../img/epoxy-coatings/Epoxy-Crystal-clear-320x200.jpg">
+                                    <img class="img-fluid" src="../img/epoxy-coatings/Epoxy-Crystal-clear-320x200.jpg" alt="">
+                                    <div class="portfolio-box-caption">
+                                       <div class="project-category text-white-50">
+                                          Epoxy coatings
+                                       </div>
+                                       <div class="project-name">
+                                          Epoxy Crystal Clear
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <script>
+                     $( ".mk-accordion-wrapper #accordion" ).accordion({ collapsible: true, heightStyle: "content", active: false });
+                     
+                     $('.mk-accordion-wrapper').clone(true,true).attr('class','mk-accordion-wrapper-clone').prependTo('.mk-accordion-wrapper-hidden');
+                     
+                  </script>
+               </div>
+			 </section>
+         </div>
+      </section>
+       <!-- About Section -->
+<section class="page-section bg-primary" id="about">
+   <div class="container-fluid">
+      <h2 class="text-center text-white mt-0">About</h2>
+      <div class="row">
+         <div class="col-12 text-center">
+            <img src="../img/happy-wall-bldg-web.jpg" class="rounded-circle" style="max-width: 350px;">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-3 col-md-6 text-center">
+            <div class="card mt-5 mk-cardZoomIn">
+               <div class="card-body">
+                  <div class="mt-5">
+                     <a href="#" data-toggle="modal" data-target="#aboutusModal">
+                        <i class="fas fa-4x fa-info-circle text-primary mb-4"></i>
+                        <h3 class="h4 text-white mb-2">About us</h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+			
+			
+			 <!-- Modal -->
+			 <div id="aboutusModal" class="mk-model modal fade" role="dialog">
+				<div class="modal-dialog mk-modalWidth">
+				   <!-- Modal content-->
+				   <div class="modal-content mk-modalBg">
+					  <div class="modal-header text-center pb-0">
+						 <h5 class="modal-title text-primary w-100"><i class="fas fa-info-circle text-primary mb-4"></i>
+							<strong>About us</strong>
+						 </h5>
+						 <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  </div>
+					  <div class="modal-body text-left">
+						 <p class="mb-4">
+							Amazona is a leading company specialized in the development and production of paints and coatings in Lebanon and the Middle East.
+						 </p>
+						 <p class="mb-4">
+							Established in 1984,&nbsp;Amazona has been able to build up a long&nbsp;list of references on a multinational level.
+						 </p>
+						 <p class="mb-4">
+							Despite strong competition the company has shown fast growth and expansion by building a reputation based on quality and client satisfaction.
+						 </p>
+						 <p class="mb-4">
+							Amazona achieved excellent combination of high quality&nbsp;raw materials, highly qualified engineers and&nbsp;technical staff, intensive research, advanced equipment and innovation.
+						 </p>
+						 <p class="mb-4">
+							By custom made products, Amazona endeavors&nbsp;to meet client satisfaction.
+						 </p>
+						 <p class="mb-4">
+							Amazona’s strong commitment to quality has resulted in acquiring the ISO 9001: 2015 certificate for quality management.
+						 </p>
+					  </div>
+					  <div class="modal-footer">
+						 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+			 
+					 
+         </div>
+         <div class="col-lg-3 col-md-6 text-center">
+            <div class="card mt-5 mk-cardZoomIn">
+               <div class="card-body">
+                  <div class="mt-5">
+                     <a href="#" data-toggle="modal" data-target="#whychooseusModal">
+                        <i class="fas fa-4x fa-lightbulb text-primary mb-4"></i>
+                        <h3 class="h4 text-white mb-2">Why choose us</h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+			
+			<!-- Modal -->
+			 <div id="whychooseusModal" class="mk-model modal fade" role="dialog">
+				<div class="modal-dialog mk-modalWidth">
+				   <!-- Modal content-->
+				   <div class="modal-content mk-modalBg">
+					  <div class="modal-header text-center pb-0">
+						 <h5 class="modal-title text-primary w-100"><i class="fas fa-lightbulb text-primary mb-4"></i>
+							<strong> Why choose us</strong>
+						 </h5>
+						 <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  </div>
+					  <div class="modal-body">
+						 <ul class="mb-4">
+							<li style="text-align: left;">More than 35 years of history and experience</li>
+							<li style="text-align: left;">A variety of more than 100 types of products</li>
+							<li style="text-align: left;">Support of research and development and commitment for improvement</li>
+							<li style="text-align: left;">Priority for customer satisfaction and responsiveness to customer feedback</li>
+							<li style="text-align: left;">Preserving standards and certifications</li>
+						 </ul>
+						 <h4 class="h5 mb-2 text-left">Our core values:</h4>
+						 <ul class="mb-4">
+							<li style="text-align: left;"><strong>Family Spirit</strong></li>
+						 </ul>
+						 <p class="mb-4" style="text-align: left;">Family spirit for a big Vision
+						 </p>
+						 <ul class="mb-4" style="text-align: left;">
+							<li><strong>Passion</strong></li>
+						 </ul>
+						 <p class="mb-4" style="text-align: left;">Passion for Success
+						 </p>
+						 <ul class="mb-4" style="text-align: left;">
+							<li><strong>Hard Work</strong></li>
+						 </ul>
+						 <p class="mb-4" style="text-align: left;">Hard work for building a Career
+						 </p>
+						 <ul class="mb-4" style="text-align: left;">
+							<li><strong>Environment sustainability</strong></li>
+						 </ul>
+						 <p class="mb-4" style="text-align: left;">Healthy environment for a Healthy society
+						 </p>
+						 <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+			 
+         </div>
+         <div class="col-lg-3 col-md-6 text-center">
+            <div class="card mt-5 mk-cardZoomIn">
+               <div class="card-body">
+                  <div class="mt-5">
+                     <a href="#" data-toggle="modal" data-target="#missionstatement">
+                        <i class="fas fa-4x fa-space-shuttle text-primary mb-4"></i>
+                        <h3 class="h4 text-white mb-2">Mission statement</h3>
+                     </a>
+                  </div>
+               </div>
+			 </div>  
+			    <!-- Modal -->
+			 <div id="missionstatement" class="mk-model modal fade" role="dialog">
+				<div class="modal-dialog mk-modalWidth">
+				   <!-- Modal content-->
+				   <div class="modal-content mk-modalBg">
+					  <div class="modal-header text-center pb-0">
+						 <h5 class="modal-title text-primary w-100"><i class="fas fa-space-shuttle text-primary mb-4"></i>
+							<strong> Mission statement</strong>
+						 </h5>
+						 <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  </div>
+					  <div class="modal-body">
+						 <ul class="text-left mb-4">
+							<li>Constantly improving the quality of our paints by staying up-to-date with local and international markets and regularly updating our production line.</li>
+							<li>Producing high quality paints.</li>
+							<li>Keeping the environment safe by adopting green and eco-friendly approaches.&nbsp;</li>
+							<li>Establishing long term relationships and trust with customers and taking into consideration customer feedbacks.</li>
+							<li>Promoting sustainable growth in the community.</li>
+							<li>Maintaining the highest level of professionalism, integrity, and service.</li>
+							</span>
+						 </ul>
+						 <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+            
+         </div>
+         <div class="col-lg-3 col-md-6 text-center">
+		 
+            <div class="card mt-5 mk-cardZoomIn">
+               <div class="card-body">
+                  <div class="mt-5">
+                     <a href="#" data-toggle="modal" data-target="#qualitypolicy">
+                        <i class="fas fa-4x fa-bullseye text-primary mb-4"></i>
+                        <h3 class="h4 text-white mb-2">Quality policy</h3>
+                    </a>
+                  </div>
+               </div>
+            </div>
+			
+			<!-- Modal -->
+			 <div id="qualitypolicy" class="mk-model modal fade" role="dialog">
+				<div class="modal-dialog mk-modalWidth">
+				   <!-- Modal content-->
+				   <div class="modal-content mk-modalBg">
+					  <div class="modal-header text-center pb-0">
+						 <h5 class="modal-title text-primary w-100"><i class="fas fa-bullseye text-primary mb-4"></i>
+							<strong> Quality policy</strong>
+						 </h5>
+						 <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  </div>
+					  <div class="modal-body">
+						 <div class="row">
+							<div class="col-md-6 col-sm-12">
+							   <img src="../img/quality.png" class="img-responsive quality">
+							</div>
+							<div class="col-md-6 col-sm-12">
+							   <p class="mb-4" style="text-align: left;">Amazona is committed to satisfy customers and to carry out work according to the highest standards by&nbsp;:
+							   </p>
+							   <ul class="mb-4" style="text-align: left;">
+								  <li>Customizing products to suit end user needs</li>
+								  <li>Delivering products on time</li>
+								  <li>Developing eco-friendly products</li>
+								  <li>Effectively responding to customer feedbacks</li>
+							   </ul>
+							   <p class="mb-4" style="text-align: left;">It is also commited to maintain ISO9001 certification and to continuously improve the effectiveness of the Quality Management System.
+							   </p>
+							   <p class="mb-4" style="text-align: left;">The company continuously offers planned and structured trainings to develop our employees.
+							   </p>
+							   <p class="mb-4" style="text-align: left;">Amazona promotes community service and endeavor to fully comply with our customer feedback.
+							   </p>
+							</div>
+						 </div>
+					  </div>
+					  <div class="modal-footer">
+						 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+         </div>
+      </div>
+   </div>
+   </div>
+</section>
+      <!-- Contact Section -->
+      <section class="page-section" id="contact">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-8 text-center">
+                  <h2 class="mt-0">Let's Get In Touch!</h2>
+                  <hr class="divider my-4">
+                  <p class="text-muted mb-5">We’re looking forward to assisting you with any questions or feedback you may have. Please don’t hesitate to contact us by using the following methods and we will get back to you at our earliest convenience.<br><br>P.O.Box: 85 Zouk Mikael Lebanon</p>
+               </div>
+            </div>
+			<div class="row justify-content-center text-primary">
+               <div class="col-6 text-right">
+					<h3>
+						<a href="https://www.facebook.com/HappyWallPaints" target="_blank">
+							<i class="fab fa-facebook-square mk-transition-icon"></i>
+						</a>
+					</h3>
+               </div>
+			   <div class="col-6 text-left">
+					<h3>
+						<a href="https://www.instagram.com/happywallpaints" target="_blank">
+							<i class="fab fa-instagram mk-transition-icon"></i>
+						</a>
+					</h3>
+               </div>
+            </div>
+			<div class="row justify-content-center">
+               <div class="col-lg-12 text-right">
+				 <hr class="divider my-4">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 ml-auto text-center">
+                  <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                  <div class="row">
+                     <div class="col-6">+961 9 218 656</div>
+                     <div class="col-6">+961 9 218 645</div>
+                  </div>
+               </div>
+               <div class="col-lg-4 ml-auto text-center">
+                  <i class="fas fa-fax fa-3x mb-3 text-muted"></i>
+                  <div>+961 9 220 215</div>
+               </div>
+               <div class="col-lg-4 mr-auto text-center">
+                  <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                  <!-- Make sure to change the email address in anchor text AND the link below! -->
+                  <a class="d-block" href="mailto:info@happywallpaints.com">info@happywallpaints.com</a>
+               </div>
+            </div>
+            <div class="row mt-4">
+               <div class="col-12">
+                  <!--The div element for the map -->
+                  <div id="map"></div>
+               </div>
+            </div>
+         </div>
+         <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Amazona 
+              var amzonaLocation = {lat: 33.9539705, lng: 35.622811};
+              // The map, centered at amzonaLocation
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 18, center: amzonaLocation});
+              // The marker, positioned at amzonaLocation
+              var marker = new google.maps.Marker({position: amzonaLocation, map: map});
+            }
+                
+         </script>
+         <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVnFr-ilxwq3pDDLC3-mbjnihRHgVAFXA&callback=initMap"></script>
+      </section>
+	  
+	  <!-- newsdiv-->
+	  <div class="mk-newsdiv">
+		  <div class="container mk-minimized-news" onclick="showNewsDiv();">
+			<div class="row">
+               <div class="col-lg-3 mr-auto text-center">
+                  <i class="fas fa-newspaper fa-2x text-muted d-block"></i>
+               </div>
+			   <div class="col-lg-9 mr-auto mt-auto mb-auto text-center">
+                  <a class="d-block" href="#">What's new !</a>
+               </div>
+            </div>
+		  </div>
+		  <div class="container mk-maximized-news" onclick="hideNewsDiv();">
+			<div class="row mk-header-news-row">
+				<div class="col-11 mr-auto text-center pl-1 pr-1 pt-1">
+					<h4 class="text-secondary w-100 mb-0 mk-news-title">
+						Wood Putty
+					</h4>
+				</div>
+				<div class="col-1 mr-auto text-center">
+					<button type="button" class="close" onclick="hideNewsDiv();">&times;</button>
+				</div>
+            </div>
+			<div class="row mt-5">
+               <div class="col mr-auto text-center">
+                   <img class="mk-news-img mk-primary-news-img" src="../img/news/news-pic1-v2.jpg?v=1"/>
+               </div>
+            </div>
+			<div class="row mt-5">
+               <div class="col mr-auto text-center">
+			   <span>
+				   Water based filler for wood to repair surface holes, dents and scratches on any type of wood. <br>
+				   Easily sandable, stainable and resistant to shrinking and cracking. <br>
+				   It is ideal for filling nail holes and minor defects after assembly and finishing. <br>
+				   It is used for all interior and exterior surfaces!
+			   </span>
+                   <!--<img class="mk-news-img mk-secondary-news-img" src="img/news/news-pic2.jpg"/>-->
+               </div>
+            </div>
+		  </div>
+		  
+	  </div>
+	  
+	  <div class="mk-newsdiv-mobile">
+		  <div class="container mk-minimized-news" onclick="showNewsDiv();">
+			<div class="row">
+               <div class="col-5 mr-auto text-right">
+                  <i class="fas fa-newspaper fa-2x text-muted d-block"></i>
+               </div>
+			   <div class="col-7 mr-auto mt-auto mb-auto text-left">
+                  <a class="d-block" href="#">What's new !</a>
+               </div>
+            </div>
+		  </div>
+		  <div class="container mk-maximized-news" onclick="hideNewsDiv();">
+			<div class="row mk-header-news-row">
+				<div class="col-11 mr-auto text-center pl-1 pr-1 pt-1">
+					<h4 class="text-secondary w-100 mb-0 mk-news-title">
+						Wood Putty
+					</h4>
+				</div>
+				<div class="col-1 mr-auto text-center">
+					<button type="button" class="close" onclick="hideNewsDiv();">&times;</button>
+				</div>
+            </div>
+			<div class="row mt-1">
+               <div class="col mr-auto text-center">
+                   <img class="mk-news-img mk-primary-news-img" src="../img/news/news-pic1-v2.jpg?v=1"/>
+               </div>
+            </div>
+			<div class="row">
+               <div class="col mr-auto text-center">
+			    <span>
+				   Water based filler for wood to repair surface holes, dents and scratches on any type of wood. <br>
+				   Easily sandable, stainable and resistant to shrinking and cracking. <br>
+				   It is ideal for filling nail holes and minor defects after assembly and finishing. <br>
+				   It is used for all interior and exterior surfaces!
+			   </span>
+                   <!--<img class="mk-news-img mk-secondary-news-img" src="img/news/news-pic2.jpg"/>-->
+               </div>
+            </div>
+		  </div>
+		  
+	  </div>
+	  
+      <!-- Footer -->
+      <footer class="bg-light py-5">
+         <div class="container">
+            <div class="small text-center text-muted">Copyright &copy; 2019 - Amazona Paints</div>
+         </div>
+      </footer>
+      <!-- Bootstrap core JavaScript -->
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="../js/creative.js"></script>
+   </body>
+</html>

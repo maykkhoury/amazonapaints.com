@@ -1,0 +1,6 @@
+DirectoryIndex index.html?v=1
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^amazonapaints.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.amazonapaints.com$
+RewriteCond %{REQUEST_URI} !amazona_new/
+RewriteRule (.*) /amazona_new/$1 [L]

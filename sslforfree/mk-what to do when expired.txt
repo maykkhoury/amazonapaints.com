@@ -1,0 +1,3 @@
+-generate certificate from https://www.sslforfree.com/
+-go to cpanel, and upload the .key file and the 2 .crt file
+-SSL/TLS ==> Manage SSL sites==> install that shit
