@@ -11872,6 +11872,11 @@ img.mfp-img {
 	background-color: #4769ad !important;
     border-color: #b6c1cf !important;
 }
+@media (max-width: 767px) {
+	.amazona-play-button{
+		font-size: 12px;
+	}
+}
 
 @media (min-width: 992px) {
 	.amazona-header-row{
@@ -11889,7 +11894,22 @@ img.mfp-img {
 	}
 }
 
+/* Catalogs section*/
+#colors .mk-catalogs-list a h4{
+  color: #495057;
+  margin-bottom: 0px;
+}
+
+#colors .card-body {
+  padding: 0.5rem;
+}
+
+/*----*/
+
+
+
+
 /*Hiding the news section*/
 .mk-newsdiv-mobile, .mk-newsdiv{
-	/*display: none;*/
+	display: none !important;
 }
