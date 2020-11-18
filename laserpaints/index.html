@@ -230,7 +230,7 @@
 						dataType: "json"
 					}).done(function (res) {
 						$.each(res.files, function( index, value ) {
-						  modal.find('#mk-copyfrom').clone().attr("style","").attr("id","mk-123").html("<i class='fa fa-download'></i> " +value.name).attr("href","tds/" + categoryFolder + "/"+productName + "/"+value.name).appendTo(modal.find('#mk-copyfrom').closest(".modal-body .list-group"));
+						  modal.find('#mk-copyfrom').clone().attr("style","").attr("id","mk-123").html("<i class='fa fa-download'></i> " +value.name).attr("href","tds/" + categoryFolder + "/"+productName + "/"+value.name + "?v=2").appendTo(modal.find('#mk-copyfrom').closest(".modal-body .list-group"));
 						});
 					}).fail(function (jqXHR, textStatus, errorThrown) {
 						modal.find('#mk-copyfrom').parent().prepend("<div class='alert alert-danger'><strong>Error!</strong> Files not found.</div>");
