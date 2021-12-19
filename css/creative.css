@@ -11909,7 +11909,7 @@ img.mfp-img {
 
 
 
-/*Hiding the news section*/
-/*.mk-newsdiv-mobile, .mk-newsdiv{
+/*Hiding the news sectio */
+.mk-newsdiv-mobile, .mk-newsdiv{
 	display: none !important;
-}*/
+}
