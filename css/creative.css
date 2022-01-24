@@ -11913,3 +11913,7 @@ img.mfp-img {
 .mk-newsdiv-mobile, .mk-newsdiv{
 	display: none !important;
 }
+
+.mk-search{
+ padding: 8px !important;
+}
