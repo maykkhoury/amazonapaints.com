@@ -11792,7 +11792,8 @@ img.mfp-img {
 
 	/**animate the div maximized-news*/
 	.mk-newsdiv .mk-maximized-news-animate{
-		height: 0;
+		/*height: 0;*/
+    height: 170px !important;
 		overflow: hidden;
 	   -moz-animation: mk-news-slide 1s ease 0s forwards;
 	   -webkit-animation: mk-news-slide 1s ease 0s forwards;
@@ -11909,11 +11910,11 @@ img.mfp-img {
 
 
 
-/*Hiding the news sectio */
+/*Hiding the news sectio 
 .mk-newsdiv-mobile, .mk-newsdiv{
 	display: none !important;
 }
-
+*/
 .mk-search{
  padding: 8px !important;
 }
