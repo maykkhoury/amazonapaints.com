@@ -11910,11 +11910,11 @@ img.mfp-img {
 
 
 
-/*Hiding the news sectio 
+/*Hiding the news section*/
 .mk-newsdiv-mobile, .mk-newsdiv{
 	display: none !important;
 }
-*/
+
 .mk-search{
  padding: 8px !important;
 }
