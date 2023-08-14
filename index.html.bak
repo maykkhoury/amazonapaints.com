@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Amazona is a leading company specialized in the development and production of paints and coatings in Lebanon and the Middle East. Check out our brands below">
+      <meta name="description" content="Amazona is a leading company specialized in the development and production of paints and coatings in Lebanon, the Middle East and Africa. Check out our brands below">
       <meta name="author" content="Amazona Paints">
       <title>Amazona Paints | Paints Company in Lebanon</title>
       <link rel="icon" type="image/png" href="img/icons/amazona-browser-icon.png" sizes="16x16">
@@ -16,7 +16,7 @@
       <!-- Plugin CSS -->
       <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
       <!-- Theme CSS - Includes Bootstrap -->
-      <link href="css/creative.css?v=10" rel="stylesheet">
+      <link href="css/creative.css?v=13" rel="stylesheet">
    </head>
    <body id="page-top" class="amazona">
       <!-- Bootstrap core JavaScript -->
@@ -77,7 +77,7 @@
                   <hr class="divider my-4">
                </div>
                <div class="col-lg-8 align-self-baseline mk-popOver">
-                  <p class="text-white font-weight-bold mb-5">Amazona is a leading company specialized in the development and production of paints and coatings in Lebanon and the Middle East.</p>
+                  <p class="text-white font-weight-bold mb-5">Amazona is a leading company specialized in the development and production of paints and coatings in Lebanon, the Middle East and Africa.</p>
                   <p class="text-white mb-5">We provide water based emulsion paints that could be used for interior & exterior walls. Besides being leaders in providing waterproof coating solutions, we are also able to supply solvent based paints for industrial and car refinishing applications.</p>
                   <a class="btn btn-primary btn-xl js-scroll-trigger" href="#brands">Check out our brands below</a>
                </div>
@@ -94,7 +94,7 @@
                   <div class="">
                      <div class="row">
                         <div class="col-12 text-center mk-logo-pic-div">
-                           <a href="happywallpaints/index.html?v=1" target="_blank">
+                           <a href="happywallpaints/index.html?v=7" target="_blank">
                            <img src="img/Happy-Wall-Logo.png" class="rounded">
                            </a>
                         </div>
@@ -114,7 +114,7 @@
                            -->
                         <div class="col-12 text-center">
                            <div class="">
-                              <a class="btn btn-primary btn-xl js-scroll-trigger" href="happywallpaints/index.html?v=1" target="_blank">Find out more</a>
+                              <a class="btn btn-primary btn-xl js-scroll-trigger" href="happywallpaints/index.html?v=7" target="_blank">Find out more</a>
                            </div>
                         </div>
                      </div>
@@ -124,7 +124,7 @@
                   <div class="">
                      <div class="row">
                         <div class="col-12 text-center mk-logo-pic-div">
-                           <a href="laserpaints/index.html?v=1" target="_blank">
+                           <a href="laserpaints/index.html?v=4" target="_blank">
                            <img src="img/laser-paints-logo-final.png" class="rounded mk-diminish-width-onmobile" style="max-height:84px;">
                            </a>
                         </div>
@@ -144,7 +144,7 @@
                            -->
                         <div class="col-12 text-center">
                            <div class="">
-                              <a class="btn btn-primary btn-xl js-scroll-trigger" href="laserpaints/index.html?v=1" target="_blank">Find out more</a>
+                              <a class="btn btn-primary btn-xl js-scroll-trigger" href="laserpaints/index.html?v=4" target="_blank">Find out more</a>
                            </div>
                         </div>
                      </div>
@@ -158,7 +158,7 @@
       <h2 class="text-center text-white mt-0">About</h2>
       <div class="row">
          <div class="col-12 text-center">
-            <img src="img/happy-wall-bldg-web.jpg" alt="Amazona paints building paints in lebanon" class="rounded-circle" style="max-width: 350px;">
+            <img src="img/happy-wall-bldg-web.jpg" alt="Amazona paints building paints in lebanon, Middle east and africa" class="rounded-circle" style="max-width: 350px;">
          </div>
       </div>
       <div class="row">
@@ -188,7 +188,7 @@
 					  </div>
 					  <div class="modal-body text-left">
 						 <p class="text-white mb-4">
-							Amazona is a leading company specialized in the development and production of paints and coatings in Lebanon and the Middle East.
+							Amazona is a leading company specialized in the development and production of paints and coatings in Lebanon, the Middle East and Africa.
 						 </p>
 						 <p class="text-white mb-4">
 							Established in 1984,&nbsp;Amazona has been able to build up a long&nbsp;list of references on a multinational level.
@@ -528,7 +528,7 @@
 			<div class="row mk-header-news-row">
 				<div class="col-11 mr-auto text-center pl-1 pr-1 pt-1">
 					<h4 class="text-secondary w-100 mb-0 mk-news-title">
-						WATER-BASED WOOD PROTECTION VARNISH
+						AUTOMECHANIKA DUBAI 2022
 					</h4>
 				</div>
 				<div class="col-1 mr-auto text-center">
@@ -537,20 +537,10 @@
             </div>
 			<div class="row mt-5">
                <div class="col mr-auto text-center">
-                   <img class="mk-news-img mk-primary-news-img" src="img/news/Lasure.jpeg?v=1"/>
+                   <img class="mk-news-img mk-primary-news-img" src="img/news/Automechanika_DU_2022_Banner_Personalized.jpg?v=1"/>
                </div>
             </div>
-			<div class="row mt-5">
-               <div class="col mr-auto text-center">
-			   <span>
-					A Clear water based Varnish for the protection of most types of exterior timber.<br>
-					It provides a tough and durable transparent finish protecting the wood from UV and
-					weathering damage. <br>
-					A non-yellowing film with excellent water resistance and outstanding durability.
-			   </span>
-                   <!--<img class="mk-news-img mk-secondary-news-img" src="img/news/news-pic2.jpg"/>-->
-               </div>
-            </div>
+
 		  </div>
 		  
 	  </div>
@@ -570,7 +560,7 @@
 			<div class="row mk-header-news-row">
 				<div class="col-11 mr-auto text-center pl-1 pr-1 pt-1">
 					<h4 class="text-secondary w-100 mb-0 mk-news-title">
-						WATER-BASED WOOD PROTECTION VARNISH
+						AUTOMECHANIKA DUBAI 2022
 					</h4>
 				</div>
 				<div class="col-1 mr-auto text-center">
@@ -579,16 +569,13 @@
             </div>
 			<div class="row mt-1">
                <div class="col mr-auto text-center">
-                   <img class="mk-news-img mk-primary-news-img" src="img/news/Lasure.jpeg?v=1"/>
+                   <img class="mk-news-img mk-primary-news-img" src="img/news/Automechanika_DU_2022_Banner_Personalized.jpg?v=1"/>
                </div>
             </div>
 			<div class="row">
                <div class="col mr-auto text-center">
 			    <span>
-				   A Clear water based Varnish for the protection of most types of exterior timber.<br>
-					It provides a tough and durable transparent finish protecting the wood from UV and
-					weathering damage. <br>
-					A non-yellowing film with excellent water resistance and outstanding durability.
+				
 			   </span>
                    <!--<img class="mk-news-img mk-secondary-news-img" src="img/news/news-pic2.jpg"/>-->
                </div>
